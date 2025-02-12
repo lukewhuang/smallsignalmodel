@@ -7,7 +7,7 @@ def process_s2p(input):
     with open(input, 'r') as file:
         lines = file.readlines()
     
-    # Delete 3rd 4th 5th lines, delete last 2 line"C:\Keysight\ICCAP_2024\tools\4x37p5_Vd6_Vgn0p3.mdm~S_deemb.s2p""C:\Keysight\ICCAP_2024\tools\4x37p5_Vd6_Vgn0p3.mdm~S_deemb.s2p"
+    # Delete 3rd 4th 5th lines, delete last 2 lines
     remove = {2, 3, 4, 6}  
     modified_lines = [line for i, line in enumerate(lines) if i not in remove]
     modified_lines = modified_lines[:-1]
